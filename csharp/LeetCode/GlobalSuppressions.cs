@@ -6,5 +6,4 @@
 using System.Diagnostics.CodeAnalysis;
 
 [assembly: SuppressMessage("Design", "CA1050:Declare types in namespaces")]
-[assembly: SuppressMessage("Style", "IDE0290:Use primary constructor")]
 [assembly: SuppressMessage("Performance", "CA1822:Mark members as static")]
