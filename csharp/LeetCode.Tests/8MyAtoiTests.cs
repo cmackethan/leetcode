@@ -1,6 +1,6 @@
 ﻿namespace LeetCode.Tests;
 
-public class MyAtoiTests
+public class _8MyAtoiTests
 {
     private Solution _solution;
 

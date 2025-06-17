@@ -6,24 +6,21 @@
 
 // @lc code=start
 
-using System.Collections.Generic;
-using System.Linq;
-
 public partial class Solution
 {
-    private static readonly Dictionary<char, bool> _signMap = new()
-    {
-        { '-', true },
-        { '+', false }
-    };
-
     public int MyAtoi(string s)
     {
+        Dictionary<char, bool> signMap = new()
+        {
+            { '-', true },
+            { '+', false }
+        };
+        
         if (string.IsNullOrWhiteSpace(s)) return 0;
 
         s = s.Trim();
 
-        if (_signMap.TryGetValue(s.FirstOrDefault(), out var isNegative)) s = s[1..];
+        if (signMap.TryGetValue(s.FirstOrDefault(), out var isNegative)) s = s[1..];
 
         long result = 0;
         var resultStr = isNegative ? "-" : string.Empty;

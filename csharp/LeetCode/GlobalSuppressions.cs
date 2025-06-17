@@ -5,5 +5,6 @@
 
 using System.Diagnostics.CodeAnalysis;
 
-[assembly: SuppressMessage("Design", "CA1050:Declare types in namespaces", Justification = "<Pending>", Scope = "type", Target = "~T:Solution")]
-[assembly: SuppressMessage("Style", "IDE0290:Use primary constructor", Justification = "<Pending>", Scope = "member", Target = "~M:LeetCode.Helpers.ListNode.#ctor(System.Int32,LeetCode.Helpers.ListNode)")]
+[assembly: SuppressMessage("Design", "CA1050:Declare types in namespaces")]
+[assembly: SuppressMessage("Style", "IDE0290:Use primary constructor")]
+[assembly: SuppressMessage("Performance", "CA1822:Mark members as static")]
